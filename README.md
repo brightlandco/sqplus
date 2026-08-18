@@ -1,2 +1,27 @@
-(Public Archive from SourceForge: includes other developer contributions)
-I created SqPlus to integrate Squirrel script into my real-time racing simulator, [Amazing Curves Racing](https://store.steampowered.com/app/2953660/Amazing_Curves_Racing/). Squirrel is similar to Lua, except with no GC and a C/C++ style syntax. SqPlus required a bit of complex template metaprogramming to make work back in 2005, however using it to bind variables, functions, and classes was then simple and easy to use. In 2026 I'd use COM style virtual interfaces with C++ for any dynamically updated code vs. using this kind of scripting. Not only for performance, but debugging: only one debugger is needed, making development much faster.
+### 🚗 Project Roots: SqPlus & *Amazing Curves Racing*
+
+> **📦 Public Archive from SourceForge:** *Includes various open-source developer contributions.*
+
+I originally created **SqPlus** to seamlessly integrate Squirrel script into my real-time racing simulator, [Amazing Curves Racing](https://steampowered.com). 
+
+#### 🐿️ Why Squirrel?
+* **Syntax:** Features a familiar C/C++ style syntax.
+* **Memory:** Unlike Lua, it operates with **no Garbage Collection (GC)** pauses.
+
+---
+
+#### 🛠️ Evolution of the Tech Stack: 2005 vs. Modern C++
+
+* **Back in 2005:** 
+  SqPlus required complex template metaprogramming to function properly. However, once established, binding variables, functions, and classes became remarkably simple and easy to use.
+  
+* **The Modern Advantage (C++17 / C++20 / C++23):** 
+  While this implementation historically required intense metaprogramming, this kind of binding has become significantly easier using modern language features. Features like **compile-time reflection helpers**, **`std::apply`**, **variadic templates (C++17)**, and **Concepts (C++20)** drastically reduce boilerplate code when mapping native structures to script environments.
+
+* **Looking Back from 2026:** 
+  For any dynamically updated code today, I would bypass scripting languages entirely and use **COM-style virtual interfaces with native C++**. 
+
+#### 💡 The Benefits of a Native Approach:
+1. **Performance:** Eliminates the overhead entirely.
+2. **Debugging Efficiency:** You only need a single debugger, drastically accelerating the overall development loop.
+
