@@ -1,1 +1,2 @@
-Archive from SourceForge.
+(Public Archive from SourceForge: includes other developer contributions)
+I created SqPlus to integrate Squirrel script into my real-time racing simulator, [Amazing Curves Racing](https://store.steampowered.com/app/2953660/Amazing_Curves_Racing/). Squirrel is similar to Lua, except with no GC and a C/C++ style syntax. SqPlus required a bit of complex template metaprogramming to make work back in 2005, however using it to bind variables, functions, and classes was then simple and easy to use. In 2026 I'd use COM style virtual interfaces with C++ for any dynamically updated code vs. using this kind of scripting. Not only for performance, but debugging: only one debugger is needed, making development much faster.
